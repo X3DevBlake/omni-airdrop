@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- OpenGraph & Twitter Card Social Preview Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OMNI Airdrop Portal — OMNI Ecosystem">
+  <meta property="og:description" content="Claim Daily $OMNI Airdrops & Referral Quest Bonuses">
+  <meta property="og:image" content="https://omni-llm-39821.web.app/zombie-companion.png">
+  <meta property="og:url" content="https://omni-airdrop-39821.web.app">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OMNI Airdrop Portal — OMNI Ecosystem">
+  <meta name="twitter:description" content="Claim Daily $OMNI Airdrops & Referral Quest Bonuses">
+  <meta name="twitter:image" content="https://omni-llm-39821.web.app/zombie-companion.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMNI Community Airdrop - Claim Your OMNI Allocation</title>
+  <meta name="description" content="Check eligibility and claim your OMNI tokens. Complete community quests, participate in the DAO, and join the decentralized multi-chain ecosystem.">
+  <!-- Google Fonts for Futuristic Cyberpunk / iOS Look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2026_airdrop_3">
+  <!-- Ethers.js v6 CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.15.0/ethers.umd.min.js"></script>
+  <!-- Master Google Services Integration Suite -->
+  <script src="/omni_google_ecosystem_suite.js"></script>
+  <link rel="stylesheet" href="liquid_glass_design_system.css">
+  <script src="/omni_asi_superintelligence_engine.js"></script>
+</head>
+<body>
+
+  <!-- Liquid Gradient Backdrop -->
+  <div class="liquid-gradient-container">
+    <div class="liquid-blob liquid-blob-cyan"></div>
+    <div class="liquid-blob liquid-blob-magenta"></div>
+    <div class="liquid-blob liquid-blob-gold"></div>
+  </div>
+
+  <!-- Ambient Nebula Auroras -->
+  <div class="aurora-glow aurora-1" style="opacity: 0.25;"></div>
+  <div class="aurora-glow aurora-2" style="opacity: 0.25;"></div>
+
+  <!-- Floating Crystal Background Particles -->
+  <div class="particle-container" id="particleContainer">
+    <div class="crystal crystal-1">
+      <svg viewBox="0 0 100 100">
+        <polygon points="50,10 90,50 50,90 10,50" stroke="url(#cyanPinkGrad)" fill="none" stroke-width="1.5"/>
+        <line x1="50" y1="10" x2="50" y2="90" stroke="url(#cyanPinkGrad)" stroke-width="1"/>
+        <line x1="10" y1="50" x2="90" y2="50" stroke="url(#cyanPinkGrad)" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="crystal crystal-2">
+      <svg viewBox="0 0 100 100">
+        <polygon points="50,5 95,35 95,75 50,95 5,75 5,35" stroke="url(#magentaGrad)" fill="none" stroke-width="1.5"/>
+        <line x1="50" y1="5" x2="50" y2="95" stroke="url(#magentaGrad)" stroke-width="1"/>
+        <line x1="5" y1="35" x2="95" y2="75" stroke="url(#magentaGrad)" stroke-width="0.5"/>
+      </svg>
+    </div>
+    <div class="crystal crystal-3">
+      <svg viewBox="0 0 100 100">
+        <polygon points="50,15 85,75 15,75" stroke="url(#blueGrad)" fill="none" stroke-width="1.5"/>
+        <line x1="50" y1="15" x2="50" y2="75" stroke="url(#blueGrad)" stroke-width="1"/>
+      </svg>
+    </div>
+    <!-- Shared SVG Gradients -->
+    <svg style="width:0; height:0; position:absolute;">
+      <defs>
+        <linearGradient id="cyanPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00f3ff" />
+          <stop offset="100%" stop-color="#ff007a" />
+        </linearGradient>
+        <linearGradient id="magentaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ff00ea" />
+          <stop offset="100%" stop-color="#7000ff" />
+        </linearGradient>
+        <linearGradient id="blueGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#005bff" />
+          <stop offset="100%" stop-color="#00f3ff" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-dropdown-wrapper nav-dropdown" style="position: relative; display: inline-flex; align-items: center; cursor: pointer;">
+        <a href="#" class="logo" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none;">
+          <span class="logo-icon">
+            <svg class="anim-svg anim-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 28px; height: 28px; color: #00e5ff; filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.6));">
+              <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" fill="url(#geminiGrad)"/>
+            </svg>
+          </span>
+          <span class="logo-text" style="display: inline-flex; align-items: center; gap: 4px; font-weight: bold; color: white;">OMNI<span class="logo-caret" style="font-size: 0.65rem; color: #00e5ff;">▼</span></span>
+        </a>
+        <div class="nav-dropdown-content">
+          <a href="https://omni-futures-39821.web.app" target="_blank" style="color:#00e5ff; font-weight:bold;"><span class="material-symbols-outlined gemini-symbol" style="color:#00e5ff; font-size:1.1rem; vertical-align:middle; margin-right:4px;">candlestick_chart</span> OMNI Futures (200x)</a>
+          <a href="https://omni-dao-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#00e5ff; font-size:1.1rem; vertical-align:middle; margin-right:4px;">account_balance</span> OMNI DAO & DEX</a>
+          <a href="https://omni-presences-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#a855f7; font-size:1.1rem; vertical-align:middle; margin-right:4px;">public</span> OmniPresences (3D)</a>
+          <a href="https://omni-llm-39821.web.app/season-pass.html" style="color:#ffd700; font-weight:bold;"><span class="material-symbols-outlined gemini-symbol" style="color:#ffd700; font-size:1.1rem; vertical-align:middle; margin-right:4px;">confirmation_number</span> Season Pass (S1)</a>
+          <a href="https://omni-llm-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#00e5ff; font-size:1.1rem; vertical-align:middle; margin-right:4px;">psychology</span> OMNI LLM</a>
+          <a href="https://omni-presale-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#ffd700; font-size:1.1rem; vertical-align:middle; margin-right:4px;">monetization_on</span> OMNI Presale</a>
+          <a href="https://omni-airdrop-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#f43f5e; font-size:1.1rem; vertical-align:middle; margin-right:4px;">paragliding</span> OMNI Airdrop</a>
+          <a href="https://omniair-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#00e5ff; font-size:1.1rem; vertical-align:middle; margin-right:4px;">flight</span> OMNI Air</a>
+          <a href="https://omni-network-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#00e5ff; font-size:1.1rem; vertical-align:middle; margin-right:4px;">hub</span> OMNI Network</a>
+          <a href="https://omni-kronos-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#a855f7; font-size:1.1rem; vertical-align:middle; margin-right:4px;">terminal</span> OMNI Kronos (ADE)</a>
+          <a href="https://omni-brain-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#e040fb; font-size:1.1rem; vertical-align:middle; margin-right:4px;">neurology</span> OMNI Brain</a>
+          <a href="https://omni-explorer-39821.web.app" target="_blank"><span class="material-symbols-outlined gemini-symbol" style="color:#00e5ff; font-size:1.1rem; vertical-align:middle; margin-right:4px;">travel_explore</span> OMNI Explorer</a>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="https://omni-futures-39821.web.app" class="nav-link" id="navLinkFutures" target="_blank">OMNI Futures</a>
+        <a href="https://omni-dao-39821.web.app" class="nav-link" id="navLinkDAO" target="_blank">OMNI DAO</a>
+        <a href="https://omni-llm-39821.web.app" class="nav-link" id="navLinkLLM" target="_blank">OMNI LLM</a>
+        <a href="https://omni-presale-39821.web.app" class="nav-link" id="navLinkPresale" target="_blank">OMNI Presale</a>
+        <a href="https://omni-airdrop-39821.web.app" class="nav-link active" id="navLinkAirdrop" target="_blank">OMNI Airdrop</a>
+        <a href="https://omniair-39821.web.app" class="nav-link" id="navLinkOmniAir" target="_blank">OMNI Air</a>
+        <a href="https://omni-network-39821.web.app" class="nav-link" id="navLinkNetwork" target="_blank">OMNI Network</a>
+        <a href="https://omni-kronos-39821.web.app" class="nav-link" id="navLinkKronos" target="_blank">OMNI Kronos</a>
+        <a href="https://omni-brain-39821.web.app" class="nav-link" id="navLinkBrain" target="_blank">OMNI Brain</a>
+        <a href="https://omni-explorer-39821.web.app" class="nav-link" id="navLinkExplorer" target="_blank">OMNI Explorer</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn" id="headerAuthBtn" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); padding: 0.5rem 1rem; font-family: var(--font-header); font-size: 0.85rem; cursor: pointer; color: white; background: rgba(255,255,255,0.03); transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 0.4rem; height: 38px; margin-right: 8px;">
+          <span>👤</span> <span id="headerAuthText">Sign In</span>
+        </button>
+        <button class="btn btn-connect-wallet" id="headerConnectBtn">
+          <span class="wallet-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 12V8H6a2 2 0 0 1-2-2 2 2 0 0 1 2-2h12v4" />
+              <path d="M4 6v12a2 2 0 0 0 2 2h14v-4" />
+              <path d="M18 12h4v4h-4z" />
+              <circle cx="20" cy="14" r="1" />
+            </svg>
+          </span>
+          <span id="connectBtnText">Connect Wallet</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    
+    <!-- Hero Header -->
+    <section class="hero-title-section">
+      <h1 class="hero-title gemini-title" id="airdropTitle">OMNI Community Airdrop</h1>
+      <p class="hero-subtitle" id="airdropSubtitle">
+        Claim your share of the decentralized multi-chain ecosystem. Complete community quests to earn extra rewards, stake on proposal votes, and trace eligibility in real-time.
+      </p>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+      <h2 class="section-subtitle">AIRDROP SNAPSHOT COUNTDOWN</h2>
+      
+      <div class="countdown-container">
+        <!-- Private Sale Info Pill Left -->
+        <div class="pill-card pill-left">
+          <span class="pill-title">Campaign Stage</span>
+          <span class="pill-value">Verification</span>
+        </div>
+
+        <!-- Timer Blocks -->
+        <div class="timer-blocks">
+          <div class="timer-block" id="daysBlock">
+            <span class="time-num">30</span>
+            <span class="time-label">day</span>
+          </div>
+          <div class="timer-divider">:</div>
+          <div class="timer-block" id="hoursBlock">
+            <span class="time-num">00</span>
+            <span class="time-label">hour</span>
+          </div>
+          <div class="timer-divider">:</div>
+          <div class="timer-block" id="minsBlock">
+            <span class="time-num">00</span>
+            <span class="time-label">min</span>
+          </div>
+          <div class="timer-divider">:</div>
+          <div class="timer-block" id="secsBlock">
+            <span class="time-num">00</span>
+            <span class="time-label">sec</span>
+          </div>
+        </div>
+
+        <!-- Contribute Tier Pill Right -->
+        <div class="pill-card pill-right">
+          <span class="pill-title">Snapshot Target</span>
+          <span class="pill-value">Claim Period</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Panel -->
+    <section class="stats-summary-card">
+      <div class="stat-box liquid-glass-card" id="statBoxAllocated">
+        <div class="stat-label">Total Airdrop Size</div>
+        <div class="stat-val gold" id="valTotalAirdrop">50,000,000</div>
+        <div class="stat-desc">OMNI (5.0% of Supply)</div>
+      </div>
+      <div class="stat-box liquid-glass-card" id="statBoxClaimed">
+        <div class="stat-label">Total OMNI Claimed</div>
+        <div class="stat-val cyan" id="valTotalClaimed">0</div>
+        <div class="stat-desc">Updated in real-time</div>
+      </div>
+      <div class="stat-box liquid-glass-card" id="statBoxClaimants">
+        <div class="stat-label">Ecosystem Claimants</div>
+        <div class="stat-val pink" id="valTotalClaimants">0</div>
+        <div class="stat-desc">Unique wallets checking in</div>
+      </div>
+    </section>
+
+    <!-- Claims Tracker Progress Bar -->
+    <section class="claims-progress-wrapper liquid-glass-card" id="claimsProgressCard">
+      <div class="progress-header">
+        <span id="progressLabelText">Global Claims Progress</span>
+        <span id="progressPercentText">0.00%</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progressBarFill"></div>
+      </div>
+    </section>
+
+    <!-- Main Dynamic Grid -->
+    <div class="airdrop-grid">
+      
+      <!-- Eligibility Checker (Gemini Border Animation + Spotlight cursor) -->
+      <section class="gemini-interactive-card spotlight-card" id="eligibilityCard">
+        <h2 class="card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Claim Checker
+        </h2>
+        <p class="card-desc">
+          Connect your Web3 wallet or search any EVM-compatible address to evaluate eligibility, view pre-allocated rewards, and process claims.
+        </p>
+
+        <div class="wallet-search-wrapper">
+          <div class="search-input-container">
+            <input type="text" class="wallet-input" id="walletInput" placeholder="Enter wallet address (0x...)">
+          </div>
+          <button class="btn btn-primary" id="checkBtn">Check</button>
+        </div>
+
+        <!-- Check Results Panel (Dotted bordered inside card) -->
+        <div class="result-panel" id="resultPanel" style="display: none;">
+          <div class="result-header">
+            <span class="result-status" id="resultStatusBadge">
+              <!-- Handled via JS -->
+            </span>
+            <span class="font-mono" id="resultAddressTruncated" style="font-size: 0.85rem; color: hsl(var(--text-muted));"></span>
+          </div>
+
+          <div class="allocation-box">
+            <div class="allocation-label">Pre-Allocated Rewards</div>
+            <div class="allocation-value" id="allocatedVal">0 <span>OMNI</span></div>
+          </div>
+
+          <!-- OmniAir Subscriber Boost Row -->
+          <div class="allocation-box" style="margin-top: 15px; border-top: 1px dashed rgba(255, 255, 255, 0.1); padding-top: 15px;">
+            <div class="allocation-label">OmniAir Subscriber Boost</div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <span id="airdropSocialTierBadge" style="font-weight: bold; font-size: 0.85rem; color: rgba(255,255,255,0.4); text-transform: uppercase;">Free Tier (+0%)</span>
+              <span id="airdropSocialBoostVal" class="text-neon-cyan font-bold" style="font-size: 1rem; text-shadow: 0 0 10px rgba(0, 243, 255, 0.3);">+0 OMNI</span>
+            </div>
+          </div>
+
+          <!-- Claim Airdrop triggers database update -->
+          <div class="claim-actions">
+            <button class="btn btn-claim" id="claimBtn" disabled>Claim Airdrop</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quests Checklist (iOS Bubbly Glass Layout) -->
+      <section class="liquid-glass-card" id="questsCard">
+        <h2 class="card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          Community Quests
+        </h2>
+        <p class="card-desc">
+          Complete individual interactive ecosystem quests to verify community activity. Completing all quests updates your allocation immediately!
+        </p>
+
+        <div class="quest-list">
+          
+          <!-- Quest 1 -->
+          <div class="quest-item" id="questDiscord">
+            <div class="quest-info">
+              <div class="quest-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+              </div>
+              <div class="quest-text">
+                <div class="quest-text-title">Connect Discord</div>
+                <div class="quest-text-reward">Reward: +125 OMNI</div>
+              </div>
+            </div>
+            <button class="quest-action-btn" id="btnQuestDiscord">Connect</button>
+          </div>
+
+          <!-- Quest 2 -->
+          <div class="quest-item" id="questTwitter">
+            <div class="quest-info">
+              <div class="quest-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                </svg>
+              </div>
+              <div class="quest-text">
+                <div class="quest-text-title">Follow OMNI on X</div>
+                <div class="quest-text-reward">Reward: +125 OMNI</div>
+              </div>
+            </div>
+            <button class="quest-action-btn" id="btnQuestTwitter">Follow</button>
+          </div>
+
+          <!-- Quest 3 -->
+          <div class="quest-item" id="questTelegram">
+            <div class="quest-info">
+              <div class="quest-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </div>
+              <div class="quest-text">
+                <div class="quest-text-title">Join Telegram News</div>
+                <div class="quest-text-reward">Reward: +100 OMNI</div>
+              </div>
+            </div>
+            <button class="quest-action-btn" id="btnQuestTelegram">Join</button>
+          </div>
+
+          <!-- Quest 4 -->
+          <div class="quest-item" id="questDAO">
+            <div class="quest-info">
+              <div class="quest-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="quest-text">
+                <div class="quest-text-title">Vote on OMNI Proposal</div>
+                <div class="quest-text-reward">Reward: +150 OMNI</div>
+              </div>
+            </div>
+            <button class="quest-action-btn" id="btnQuestDAO">Vote Now</button>
+          </div>
+        </div>
+
+        <!-- Bonus Warning Card -->
+        <div class="bonus-alert-card" id="bonusCard">
+          <div class="bonus-alert-icon">🎁</div>
+          <div class="bonus-alert-text">
+            <h4>Ecosystem Quest Rewards</h4>
+            <p id="bonusAlertText">Complete all quests to claim your full allocation with a +500 OMNI bonus!</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Gamified Lucky Spin Wheel Section -->
+    <section class="liquid-glass-card" id="luckyWheelCard" style="margin-top: 30px; padding: 30px; text-align: center; border: 1px solid rgba(0, 243, 255, 0.25);">
+      <h2 class="card-title" style="justify-content: center; font-size: 1.5rem; color: #fff; margin-bottom: 8px;">
+        🎡 Airdrop Multiplier Lucky Spin Wheel
+      </h2>
+      <p class="card-desc" style="max-width: 600px; margin: 0 auto 24px; color: #9ba4b4;">
+        Spin the daily OMNI Airdrop Wheel to unlock random multipliers ranging from <strong>1.2x to 5.0x Apex Jackpot</strong> applied directly to your claim balance!
+      </p>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+        <div style="position: relative; width: 280px; height: 280px;">
+          <!-- Pointer -->
+          <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 14px solid transparent; border-right: 14px solid transparent; border-top: 24px solid #ffd700; z-index: 10; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.8));"></div>
+          <canvas id="canvasWheel" width="280" height="280" style="border-radius: 50%; box-shadow: 0 0 30px rgba(0, 243, 255, 0.3);"></canvas>
+        </div>
+
+        <div style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;">
+          <button class="btn btn-primary" id="btnSpinWheel" onclick="spinLuckyWheel()" style="background: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-pink))); padding: 12px 32px; font-weight: 800; font-size: 1rem; border-radius: 12px; box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);">
+            🎰 Spin Lucky Wheel
+          </button>
+        </div>
+
+        <div id="wheelResultBanner" style="display: none; padding: 12px 24px; border-radius: 10px; background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; color: #fff; font-weight: bold;">
+          🎉 Congratulations! You unlocked: <span id="wheelResultText" style="color: #ffd700;">2.0x Super Boost</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Allocation Details / FAQ Section -->
+    <section class="airdrop-details-section">
+      <h2 class="section-title">Airdrop Breakdown</h2>
+      
+      <div class="details-grid">
+        
+        <!-- Pie Chart Visualization -->
+        <div class="pie-visual-container liquid-glass-card" id="allocationChartCard">
+          <div class="pie-chart" id="allocPieChart">
+            <div class="pie-center-label">
+              <div class="pie-center-title">50M</div>
+              <div class="pie-center-sub">OMNI</div>
+            </div>
+          </div>
+          
+          <div class="pie-legends">
+            <div class="legend-item">
+              <span class="legend-dot dot-cyan"></span>
+              <span>Community (45%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot dot-pink"></span>
+              <span>Stakers (25%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot dot-gold"></span>
+              <span>Contributors (20%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot dot-blue"></span>
+              <span>Ecosystem (10%)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bubbly Glass FAQ Accordions -->
+        <div class="faq-list">
+          <div class="faq-item" id="faq1">
+            <button class="faq-trigger" aria-expanded="false" id="faqBtn1">
+              Who is eligible for the OMNI Airdrop?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Eligibility is based on multiple criteria including participation in the OMNI Presale, holding OMNI DAO tokens, staking liquidity, voting on proposals, and completing public developer quests before the snapshot date (May 15, 2026).</p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq2">
+            <button class="faq-trigger" aria-expanded="false" id="faqBtn2">
+              Are there gas fees for claiming OMNI?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Yes, all claims are processed on-chain. Standard networks require gas fees paid in native ether. Always ensure you connect from official domains like omni-airdrop-39821.web.app to prevent phishing attacks.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq3">
+            <button class="faq-trigger" aria-expanded="false" id="faqBtn3">
+              How are community quests verified?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>When you trigger the quests, our client checks active sessions, API hooks, and proposal histories. Once verified, the allocations table updates locally on the secure backend, allowing you to instantly claim the bonus allocation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Airdrop Recipients Leaderboard -->
+    <section class="recipients-section" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.05);">
+      <h2 style="font-family: var(--font-header); text-align: center; color: white; margin-bottom: 40px; font-size: 1.8rem; letter-spacing: 1px; font-weight: bold; background: linear-gradient(135deg, #00f3ff, #ff007a); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        LIVE AIRDROP RECIPIENTS LIST
+      </h2>
+      <div class="liquid-glass-card" style="padding: 20px; overflow-x: auto; background: rgba(8,4,23,0.55); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; backdrop-filter: blur(12px);">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid rgba(0, 243, 255, 0.2); color: #888; font-family: var(--font-header);">
+              <th style="padding: 12px 10px;">Username / Wallet</th>
+              <th style="padding: 12px 10px;">Allocation (OMNI)</th>
+              <th style="padding: 12px 10px;">Claim Status</th>
+              <th style="padding: 12px 10px;">Network Transaction</th>
+            </tr>
+          </thead>
+          <tbody id="airdropRecipientsBody">
+            <!-- Populated dynamically from Firestore real-time claims and contributions -->
+            <tr>
+              <td colspan="4" style="text-align:center; padding: 20px; color:#888;">Connecting to OMNI Network database...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Success/Claim Progress Modal Popup Overlay -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content liquid-glass-card" id="modalContainer">
+      <div id="modalSpinState">
+        <div class="modal-spinner"></div>
+        <h3 class="modal-title" style="margin-top: 1rem;">Broadcasting Claim</h3>
+        <p class="modal-text">Simulating multi-chain transaction execution... please confirm signature request in your Web3 wallet provider.</p>
+      </div>
+
+      <div id="modalSuccessState" style="display: none;">
+        <div class="modal-success-icon">✓</div>
+        <h3 class="modal-title" style="margin-top: 1rem; color: hsl(var(--neon-green));">Airdrop Claimed!</h3>
+        <p class="modal-text" id="modalSuccessText">
+          Successfully claimed 0.00 OMNI! The tokens have been minted and transferred to your wallet address.
+        </p>
+        <p class="font-mono" style="font-size: 0.8rem; background: rgba(0,0,0,0.3); padding: 0.5rem 1rem; border-radius: 10px; width: 100%;">
+          Tx: <a href="#" id="txHashLink" style="color: hsl(var(--neon-cyan)); text-decoration: none;">0x7a3...e911</a>
+        </p>
+        <button class="btn btn-primary" id="modalCloseBtn" style="margin-top: 0.5rem; padding: 0.6rem 2rem;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="https://omni-presale-39821.web.app" class="footer-link">Presale</a>
+        <a href="https://omni-dao-39821.web.app" class="footer-link">OMNI DAO</a>
+        <a href="https://omniair-39821.web.app" class="footer-link">OmniAir</a>
+        <a href="https://omni-dao-39821.web.app/whitepaper.md" download class="footer-link">Whitepaper</a>
+      </div>
+      <p class="footer-copyright" id="copyrightText">© 2026 OMNI Multi-Chain Yield Ecosystem. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL: Sign Up / Sign In -->
+  <div class="modal-overlay" id="authModal">
+    <div class="modal-content auth-card" style="max-width: 440px; text-align: center; display: flex; flex-direction: column; gap: 1.5rem; transform: scale(0.9); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);">
+      <button class="modal-close-btn" id="authModalClose" style="position: absolute; top: 15px; right: 20px; background: none; border: none; color: rgba(255,255,255,0.5); font-size: 1.8rem; cursor: pointer; line-height: 1;">&times;</button>
+      
+      <div class="auth-tabs" style="display: flex; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 1.5rem; gap: 1rem; padding-bottom: 0.5rem; width: 100%;">
+        <button class="auth-tab-btn active" id="tabBtnLogin" style="background:none; border:none; color:white; font-family:var(--font-header); font-size:1.1rem; font-weight:600; cursor:pointer; padding: 0.3rem 0; position:relative; transition:all 0.2s;">Log In</button>
+        <button class="auth-tab-btn" id="tabBtnSignup" style="background:none; border:none; color:rgba(255,255,255,0.4); font-family:var(--font-header); font-size:1.1rem; font-weight:600; cursor:pointer; padding: 0.3rem 0; position:relative; transition:all 0.2s;">Sign Up</button>
+      </div>
+
+      <!-- Login View -->
+      <div class="auth-view active" id="authViewLogin" style="width: 100%;">
+        <h3 class="modal-title" style="margin-bottom: 0.5rem; font-size: 1.3rem; text-align: center;">Welcome Back</h3>
+        <p class="modal-subtitle" style="margin-bottom: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); text-align: center;">Log in to manage your OMNI account and check-ins.</p>
+        
+        <form class="auth-form" id="loginForm" style="display:flex; flex-direction:column; gap:1rem; text-align: left; width: 100%;">
+          <div class="form-group" style="display:flex; flex-direction:column; gap:0.4rem;">
+            <label class="form-label" style="font-size:0.8rem; color:rgba(255,255,255,0.6); font-family:var(--font-header);">Email Address</label>
+            <input type="email" class="form-input" id="loginEmail" placeholder="name@example.com" required style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:10px; color:white; outline:none; font-family:var(--font-body); font-size:0.9rem;">
+          </div>
+          <div class="form-group" style="display:flex; flex-direction:column; gap:0.4rem;">
+            <label class="form-label" style="font-size:0.8rem; color:rgba(255,255,255,0.6); font-family:var(--font-header);">Password</label>
+            <input type="password" class="form-input" id="loginPassword" placeholder="••••••••" required style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:10px; color:white; outline:none; font-family:var(--font-body); font-size:0.9rem;">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 0.8rem; width:100%; height:42px;">
+            <span class="btn-text">Log In</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Signup View -->
+      <div class="auth-view" id="authViewSignup" style="display: none; width: 100%;">
+        <h3 class="modal-title" style="margin-bottom: 0.5rem; font-size: 1.3rem; text-align: center;">Create Account</h3>
+        <p class="modal-subtitle" style="margin-bottom: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); text-align: center;">Start your journey into decentralized infrastructure.</p>
+        
+        <form class="auth-form" id="signupForm" style="display:flex; flex-direction:column; gap:1rem; text-align: left; width: 100%;">
+          <div class="form-group" style="display:flex; flex-direction:column; gap:0.4rem;">
+            <label class="form-label" style="font-size:0.8rem; color:rgba(255,255,255,0.6); font-family:var(--font-header);">Display Name</label>
+            <input type="text" class="form-input" id="signupName" placeholder="Alex DeFi" required style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:10px; color:white; outline:none; font-family:var(--font-body); font-size:0.9rem;">
+          </div>
+          <div class="form-group" style="display:flex; flex-direction:column; gap:0.4rem;">
+            <label class="form-label" style="font-size:0.8rem; color:rgba(255,255,255,0.6); font-family:var(--font-header);">Email Address</label>
+            <input type="email" class="form-input" id="signupEmail" placeholder="name@example.com" required style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:10px; color:white; outline:none; font-family:var(--font-body); font-size:0.9rem;">
+          </div>
+          <div class="form-group" style="display:flex; flex-direction:column; gap:0.4rem;">
+            <label class="form-label" style="font-size:0.8rem; color:rgba(255,255,255,0.6); font-family:var(--font-header);">Password</label>
+            <input type="password" class="form-input" id="signupPassword" placeholder="••••••••" required style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:10px; color:white; outline:none; font-family:var(--font-body); font-size:0.9rem;">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 0.8rem; width:100%; height:42px;">
+            <span class="btn-text">Sign Up</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="auth-divider" style="display: flex; align-items: center; text-align: center; color: rgba(255,255,255,0.3); font-size: 0.75rem; margin: 1.2rem 0; width: 100%;">
+        <span style="flex: 1; border-bottom: 1px solid rgba(255,255,255,0.08); margin-right: 10px;"></span>
+        <span>or connect via</span>
+        <span style="flex: 1; border-bottom: 1px solid rgba(255,255,255,0.08); margin-left: 10px;"></span>
+      </div>
+
+      <!-- Google Sign In -->
+      <button class="btn btn-google btn-block" id="btnGoogleAuth" style="width: 100%; height: 42px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: white; cursor: pointer; font-family: var(--font-header); font-size: 0.9rem; transition: all 0.2s;">
+        <svg class="google-icon-svg" viewBox="0 0 24 24" style="width:16px; height:16px; margin-right:8px;">
+          <path fill="#EA4335" d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114-3.473 0-6.29-2.817-6.29-6.29s2.817-6.29 6.29-6.29c1.58 0 3.01.584 4.12 1.545l3.05-3.05C19.11 2.52 15.91.954 12.24.954 5.964.954.88 6.038.88 12.314s5.084 11.36 11.36 11.36c6.26 0 10.925-4.39 10.925-10.925 0-.74-.08-1.465-.225-2.164H12.24z"/>
+          <path fill="#4285F4" d="M22.94 10.5h-10.7v3.9h6.88c-.65 2.41-2.52 4.11-5.14 4.11-3.47 0-6.29-2.82-6.29-6.29s2.82-6.29 6.29-6.29c1.58 0 3.01.58 4.12 1.54l3.05-3.05C19.11 2.52 15.91.95 12.24.95 5.96.95.88 6.04.88 12.31s5.08 11.36 11.36 11.36c6.26 0 10.92-4.39 10.92-10.92 0-.74-.08-1.46-.22-2.16z"/>
+          <path fill="#FBBC05" d="M1.385 7.435L4.82 10.01c.915-2.42 3.23-4.14 5.98-4.14 1.58 0 3.01.584 4.12 1.545l3.05-3.05C16.14 2.65 13.79 1.76 12.24 1.76c-4.8 0-8.86 3.42-9.87 7.435z"/>
+          <path fill="#34A853" d="M12.24 22.846c3.67 0 6.87-1.565 8.92-4.225l-3.05-3.05c-1.11.96-2.54 1.545-4.12 1.545-3.473 0-6.29-2.817-6.29-6.29 0-.255.02-.51.055-.76L1.385 7.435C1.06 8.965.88 10.605.88 12.314c0 6.276 5.084 11.35 11.36 11.35z"/>
+        </svg>
+        Continue with Google
+      </button>
+
+      <!-- Account Linked State/Action -->
+      <div class="auth-link-wallet-banner" id="authLinkWalletBanner" style="display: none; background: rgba(0, 243, 255, 0.05); border: 1px dashed rgba(0, 243, 255, 0.2); border-radius: 8px; padding: 10px; margin-top: 1rem; flex-direction: column; gap: 0.6rem; align-items: center; justify-content: center; width: 100%;">
+        <span class="banner-text" style="font-size: 0.8rem; text-align: center; color: rgba(255,255,255,0.8);">Link connected wallet <span id="authLinkAddress" class="text-neon-cyan font-mono" style="color: hsl(var(--neon-cyan)); font-weight:600;">0x...</span> to this account?</span>
+        <button class="btn btn-tiny" id="btnAuthLinkWallet" style="height: 28px; padding: 0 12px; border-radius: 6px; font-size: 0.75rem; border: 1px solid hsl(var(--neon-cyan)); background: rgba(0, 243, 255, 0.1); color: white; cursor: pointer; transition: all 0.2s;">Link Wallet</button>
+      </div>
+
+      <!-- User Dropdown Panel -->
+      <div class="auth-profile-panel" id="authProfilePanel" style="display: none; text-align: center; width: 100%;">
+        <div class="profile-avatar" style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-pink))); margin: 0 auto 0.8rem; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0a0a19; font-size: 1.2rem;">U</div>
+        <div class="profile-name" id="profilePanelName" style="font-weight: 600; font-size: 1rem; margin-bottom: 0.2rem;">User Name</div>
+        <div class="profile-email" id="profilePanelEmail" style="font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem;">user@example.com</div>
+        
+        <div class="profile-linked-wallet" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 10px; margin-bottom: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem; width: 100%;">
+          <span style="font-size: 0.75rem; color: rgba(255,255,255,0.5);">Linked Wallet</span>
+          <span id="profilePanelWallet" style="font-size: 0.85rem; color: hsl(var(--neon-cyan)); font-family: monospace; font-weight: 600;">None</span>
+        </div>
+
+        <div style="display: flex; gap: 0.6rem; justify-content: center;">
+          <button class="btn btn-tiny" id="btnPanelLink" style="flex:1; height:32px; font-size:0.8rem; background:rgba(0, 243, 255, 0.1); border:1px solid hsl(var(--neon-cyan)); color:white; border-radius:6px; cursor:pointer;">Link Current</button>
+          <button class="btn btn-tiny" id="btnPanelSignout" style="flex:1; height:32px; font-size:0.8rem; background:rgba(255, 255, 255, 0.03); border:1px solid rgba(255,255,255,0.1); color:white; border-radius:6px; cursor:pointer;">Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Wallet Connection -->
+  <div class="modal-overlay" id="walletModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="walletModalClose">&times;</button>
+      <h3 class="modal-title">Connect Wallet</h3>
+      <p class="modal-subtitle">Select your wallet provider to connect and interact with the airdrop portal.</p>
+      <div class="wallet-options" id="walletOptionsContainer"></div>
+    </div>
+  </div>
+
+  <script>
+    // Lucky Wheel Canvas Renderer & Spin Logic
+    (function() {
+      const canvas = document.getElementById('canvasWheel');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const segments = [
+        { label: '1.2x Boost', color: '#00e5ff' },
+        { label: '+500 OMNI', color: '#e040fb' },
+        { label: '1.5x Boost', color: '#10b981' },
+        { label: '+1000 OMNI', color: '#eab308' },
+        { label: '2.0x Boost', color: '#00e5ff' },
+        { label: '+2500 OMNI', color: '#f43f5e' },
+        { label: '3.0x Boost', color: '#a855f7' },
+        { label: '5.0x Apex', color: '#ffd700' }
+      ];
+      let currentAngle = 0;
+      let isSpinning = false;
+
+      function drawWheel() {
+        const numSegments = segments.length;
+        const arc = (2 * Math.PI) / numSegments;
+        const radius = canvas.width / 2;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (let i = 0; i < numSegments; i++) {
+          const angle = currentAngle + i * arc;
+          ctx.beginPath();
+          ctx.fillStyle = segments[i].color;
+          ctx.moveTo(radius, radius);
+          ctx.arc(radius, radius, radius - 4, angle, angle + arc);
+          ctx.lineTo(radius, radius);
+          ctx.fill();
+          ctx.strokeStyle = '#0a0a19';
+          ctx.lineWidth = 3;
+          ctx.stroke();
+
+          // Text label
+          ctx.save();
+          ctx.translate(radius, radius);
+          ctx.rotate(angle + arc / 2);
+          ctx.textAlign = 'right';
+          ctx.fillStyle = '#0a0a19';
+          ctx.font = 'bold 11px Outfit, sans-serif';
+          ctx.fillText(segments[i].label, radius - 15, 4);
+          ctx.restore();
+        }
+
+        // Center hub
+        ctx.beginPath();
+        ctx.arc(radius, radius, 22, 0, 2 * Math.PI);
+        ctx.fillStyle = '#0a0a19';
+        ctx.fill();
+        ctx.strokeStyle = '#00e5ff';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+      }
+
+      window.spinLuckyWheel = function() {
+        if (isSpinning) return;
+        isSpinning = true;
+        const btn = document.getElementById('btnSpinWheel');
+        if (btn) btn.disabled = true;
+
+        const extraTurns = Math.floor(Math.random() * 4 + 4) * 2 * Math.PI;
+        const targetAngle = currentAngle + extraTurns + Math.random() * 2 * Math.PI;
+        const duration = 3500;
+        const startTime = performance.now();
+        const startAngle = currentAngle;
+
+        function animate(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease out cubic
+          const easeOut = 1 - Math.pow(1 - progress, 3);
+          currentAngle = startAngle + (targetAngle - startAngle) * easeOut;
+          drawWheel();
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          } else {
+            isSpinning = false;
+            if (btn) btn.disabled = false;
+
+            // Determine prize
+            const arc = (2 * Math.PI) / segments.length;
+            const normalized = (2 * Math.PI - (currentAngle % (2 * Math.PI)) - Math.PI / 2 + 2 * Math.PI) % (2 * Math.PI);
+            const index = Math.floor(normalized / arc) % segments.length;
+            const prize = segments[index].label;
+
+            const banner = document.getElementById('wheelResultBanner');
+            const resText = document.getElementById('wheelResultText');
+            if (banner && resText) {
+              resText.textContent = prize;
+              banner.style.display = 'block';
+            }
+          }
+        }
+
+        requestAnimationFrame(animate);
+      };
+
+      drawWheel();
+    })();
+  </script>
+  <script src="space-particles.js"></script>
+  <script src="omni-pet-widget.js"></script>
+  <script type="module" src="app.js"></script>
+  <script src="omni_digital_nature_3d.js"></script>
+  <script src="omni_gemini_vector_suite.js"></script>
+
+<!-- Google Cloud Console Ecosystem Universal Bar -->
+<div id="omni-gcp-ecosystem-bar" style="position:fixed;bottom:12px;left:12px;z-index:99999;display:flex;align-items:center;gap:8px;background:rgba(15,23,42,0.88);border:1px solid rgba(56,189,248,0.4);border-radius:24px;padding:4px 12px;backdrop-filter:blur(8px);font-family:-apple-system,BlinkMacSystemFont,monospace;font-size:11px;color:#e2e8f0;box-shadow:0 4px 16px rgba(0,0,0,0.5);">
+  <span style="width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 8px #10b981;"></span>
+  <span style="font-weight:700;color:#38bdf8;">GCP ACTIVE</span>
+  <span style="color:#64748b;">·</span>
+  <span style="font-size:10px;color:#94a3b8;">PROJECT: omnix3dev (4,536 APIs)</span>
+  <a href="https://console.cloud.google.com/welcome?project=omnix3dev" target="_blank" style="color:#38bdf8;text-decoration:none;margin-left:4px;font-weight:600;">CONSOLE ↗</a>
+</div>
+
+</body>
+</html>

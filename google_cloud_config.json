@@ -1,0 +1,15 @@
+{
+  "siteId": "omni-airdrop",
+  "siteName": "OmniAirdrop Multi-Drop Protocol",
+  "category": "Token Distribution & Merkle Claim",
+  "googleCloudAccount": "rgkdevx1@gmail.com",
+  "googleCloudProject": "omnix3dev",
+  "projectNumber": "853859261845",
+  "keys": {
+    "googleMapsPlatformKey": "AIzaSyA98LaeKtOdSUPgea34sUmoCIunQrFAWqc",
+    "geminiApiKey": "AIzaSyB_FX4DE8w_BL3xm_Lz0TSfTDWbHNHcsTw"
+  },
+  "status": "LIVE_AND_CONNECTED",
+  "connectedAt": "2026-09-01T02:43:26Z",
+  "connectedApiCount": 4536
+}
