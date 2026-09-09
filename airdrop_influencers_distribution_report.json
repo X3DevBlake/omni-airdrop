@@ -17,9 +17,9 @@
       "role": "Ethereum Co-Founder & Decentralized Architecture Lead",
       "amountOmni": "500.0",
       "gasCoinOmni": "1.0",
-      "nativeGasTxHash": "PREVIOUSLY_SENT",
-      "tokenTxHash": "PREVIOUSLY_SENT",
-      "blockNumber": 25605,
+      "nativeGasTxHash": "0xee18d7ae3bbbd570c1efc44ff8a44c6c70507185aa8597f0d5469da3fa14e4a4",
+      "tokenTxHash": "0xb61c39a705460497c7782b6d18636b57826e77f30f524f0cfc1923d0c89dbcad",
+      "blockNumber": 25587,
       "confirmedBalance": "500.0"
     },
     {
@@ -31,9 +31,9 @@
       "role": "Founder of Uniswap Protocol (AMM & DEX Pioneer)",
       "amountOmni": "500.0",
       "gasCoinOmni": "1.0",
-      "nativeGasTxHash": "PREVIOUSLY_SENT",
-      "tokenTxHash": "PREVIOUSLY_SENT",
-      "blockNumber": 25605,
+      "nativeGasTxHash": "0xaaa62153d4e0954ce73bf83ccb5e64dda1fc84b5ac04ae146e5bfa836d99fd72",
+      "tokenTxHash": "0x5f1a38d39e9dcf11e26018ee38275bc227b14fbaadb19b3903cdc1a0ae7dae9e",
+      "blockNumber": 25589,
       "confirmedBalance": "500.0"
     },
     {
